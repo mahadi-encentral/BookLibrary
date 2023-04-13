@@ -4,25 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d002b26e-03a2-4080-a84f-9c155716c19e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/BookLibrary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/library/Library.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/library/SearchableLibrary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/BaseUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/Field.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/LibraryBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/Student.java" afterDir="false" />
-    </list>
+    <list default="true" id="d002b26e-03a2-4080-a84f-9c155716c19e" name="Changes" comment="Initial Drafts for The Task" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,6 +58,14 @@
       <option name="presentableId" value="Default" />
       <updated>1681418403614</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial Drafts for The Task">
+      <created>1681424493276</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1681424493276</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -88,5 +78,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial Drafts for The Task" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Drafts for The Task" />
   </component>
 </project>
