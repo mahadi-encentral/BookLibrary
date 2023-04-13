@@ -4,7 +4,6 @@ import models.Book;
 import models.Field;
 import models.LibraryBook;
 
-import java.net.Inet4Address;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -15,7 +14,9 @@ public class Library implements SearchableLibrary{
 
     private ArrayList<LibraryBook> shelf;
 
-    public void updateShelf(Map<Book, Integer> newBooks){
+
+
+    public void initializeShelf(Map<Book, Integer> newBooks){
         for (Map.Entry<Book, Integer> entry: newBooks.entrySet()
              ) {
             shelf.add(new LibraryBook(entry.getKey(), entry.getValue()));
