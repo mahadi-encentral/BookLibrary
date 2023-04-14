@@ -10,11 +10,9 @@ import java.util.Map;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
-public class Library implements SearchableLibrary{
+public class Library implements BookSearch {
 
     private ArrayList<LibraryBook> shelf;
-
-
 
     public void initializeShelf(Map<Book, Integer> newBooks){
         for (Map.Entry<Book, Integer> entry: newBooks.entrySet()

@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d002b26e-03a2-4080-a84f-9c155716c19e" name="Changes" comment="Initial Drafts for The Task" />
+    <list default="true" id="d002b26e-03a2-4080-a84f-9c155716c19e" name="Changes" comment="Implementing Waiting Concept">
+      <change afterPath="$PROJECT_DIR$/src/main/java/library/WaitingList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/Staff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/BorrowingInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/BorrowingInstance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/Borrowings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/Borrowings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/SearchableLibrary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/BookSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/BaseUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/BaseUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Student.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,8 +28,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -65,7 +76,35 @@
       <option name="project" value="LOCAL" />
       <updated>1681424493276</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Initial Drafts for The Task">
+      <created>1681425002898</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1681425002898</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Initial Drafts for The Task">
+      <created>1681425036486</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1681425036486</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Initial Drafts for The Task">
+      <created>1681425102400</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1681425102400</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Initial Thought for Borrowings">
+      <created>1681426601692</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1681426601692</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -81,6 +120,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Drafts for The Task" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Drafts for The Task" />
+    <MESSAGE value="Initial Thought for Borrowings" />
+    <MESSAGE value="Implementing Waiting Concept" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementing Waiting Concept" />
   </component>
 </project>

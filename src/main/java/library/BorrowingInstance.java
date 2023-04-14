@@ -9,7 +9,7 @@ public class BorrowingInstance {
     private Date dateBorrowed;
 
     public static BorrowingInstance stringToBorrowingInstance(String stringrepresentation){
-        String segments[] = stringrepresentation.split("#");
+        String[] segments = stringrepresentation.split("#");
         return new BorrowingInstance(segments[0], segments[1], new Date(Long.parseLong(segments[2])));
     }
     public BorrowingInstance(String userId, String bookId, Date dateBorrowed) {
@@ -22,8 +22,32 @@ public class BorrowingInstance {
        this(userId,bookId, new Date());
     }
 
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+
+    public String getBookId() {
+        return bookId;
+    }
+
+    public void setBookId(String bookId) {
+        this.bookId = bookId;
+    }
+
+    public Date getDateBorrowed() {
+        return dateBorrowed;
+    }
+
+    public void setDateBorrowed(Date dateBorrowed) {
+        this.dateBorrowed = dateBorrowed;
+    }
+
     @Override
     public String toString() {
-        return String.format("%s#%s#%s", userId, bookId, String.valueOf(dateBorrowed.getTime()));
+        return String.format("%s#%s#%s", userId, bookId, dateBorrowed.getTime());
     }
 }

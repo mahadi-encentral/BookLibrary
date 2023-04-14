@@ -5,7 +5,7 @@ import models.LibraryBook;
 
 import java.util.List;
 
-public interface SearchableLibrary {
+public interface BookSearch {
 
     List<LibraryBook> searchBooksByAuthor(String author);
     List<LibraryBook> searchBooksByField(Field field);

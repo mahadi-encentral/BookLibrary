@@ -2,7 +2,7 @@ package models;
 
 import java.util.UUID;
 
-public class BaseUser {
+public abstract class BaseUser {
     private String id;
     private String name;
     private String passsword;
@@ -12,6 +12,8 @@ public class BaseUser {
         this.id = UUID.randomUUID().toString();
 
     }
+
+    public abstract int getPriority();
 
     public String getName() {
         return name;
@@ -33,4 +35,8 @@ public class BaseUser {
         this.passsword = passsword;
     }
 
+    @Override
+    public String toString() {
+        return String.format("Name: %s%nType: %s%n",name, this.getClass().getName());
+    }
 }
