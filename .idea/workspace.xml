@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d002b26e-03a2-4080-a84f-9c155716c19e" name="Changes" comment="Implementing Waiting Concept">
-      <change afterPath="$PROJECT_DIR$/src/main/java/library/WaitingList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/Staff.java" afterDir="false" />
+    <list default="true" id="d002b26e-03a2-4080-a84f-9c155716c19e" name="Changes" comment="Testing Simple Priority Implementation">
+      <change afterPath="$PROJECT_DIR$/src/main/java/library/PriorityQue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/BorrowingInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/BorrowingInstance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/Borrowings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/Borrowings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BookLibrary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BookLibrary.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/library/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/Library.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/library/SearchableLibrary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/BookSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/BaseUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/BaseUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/WaitingList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/WaitingList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +49,6 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
@@ -104,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681426601692</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Implementing Waiting Concept">
+      <created>1681483170874</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1681483170874</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -122,6 +123,7 @@
     <MESSAGE value="Initial Drafts for The Task" />
     <MESSAGE value="Initial Thought for Borrowings" />
     <MESSAGE value="Implementing Waiting Concept" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementing Waiting Concept" />
+    <MESSAGE value="Testing Simple Priority Implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Testing Simple Priority Implementation" />
   </component>
 </project>

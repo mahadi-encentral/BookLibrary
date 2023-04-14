@@ -12,9 +12,13 @@ import java.util.stream.Collectors;
 
 public class Library implements BookSearch {
 
-    private ArrayList<LibraryBook> shelf;
+    private final ArrayList<LibraryBook> shelf  = new ArrayList<>();
 
-    public void initializeShelf(Map<Book, Integer> newBooks){
+    public Library(){
+    }
+
+    public Library(Map<Book, Integer> newBooks){
+        super();
         for (Map.Entry<Book, Integer> entry: newBooks.entrySet()
              ) {
             shelf.add(new LibraryBook(entry.getKey(), entry.getValue()));
@@ -49,5 +53,9 @@ public class Library implements BookSearch {
         return searchBooks(
                 (lb)-> lb.getBook().getAuthor().toLowerCase().contains(author.toLowerCase())
         );
+    }
+
+    public List<LibraryBook> allAvailableBooks(){
+        return shelf.stream().filter(lb -> lb.isAvailable()).collect(Collectors.toList());
     }
 }
