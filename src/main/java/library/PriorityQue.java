@@ -46,6 +46,10 @@ public class PriorityQue{
         return new ArrayList<>(que);
     }
 
+    public Object[] toArray(){
+        return que.toArray();
+    }
+
     public boolean isEmpty(){return que.isEmpty();}
     public int getSize(){return que.size();}
 }

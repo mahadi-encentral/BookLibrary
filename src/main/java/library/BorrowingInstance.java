@@ -19,7 +19,7 @@ public class BorrowingInstance {
     }
 
     public BorrowingInstance(String userId, String bookId) {
-       this(userId,bookId, new Date());
+       this(userId, bookId, new Date());
     }
 
     public String getUserId() {
@@ -44,6 +44,10 @@ public class BorrowingInstance {
 
     public void setDateBorrowed(Date dateBorrowed) {
         this.dateBorrowed = dateBorrowed;
+    }
+
+    public boolean equals(BorrowingInstance bi){
+        return bookId.equals(bi.getBookId()) && userId.equals(bi.getUserId());
     }
 
     @Override

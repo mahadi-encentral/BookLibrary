@@ -11,6 +11,16 @@ public class LibraryBook {
     private int totalCopies;
     private int availableCopies;
 
+    public LibraryBook(Book book, int totalCopies) {
+        this.book = book;
+        this.totalCopies = totalCopies;
+        this.availableCopies = totalCopies;
+    }
+
+    public boolean equals(Book book){
+        return this.book.equals(book);
+    }
+
     public Book getBook() {
         return book;
     }
@@ -35,23 +45,31 @@ public class LibraryBook {
         this.availableCopies = availableCopies;
     }
 
-    public LibraryBook(Book book, int totalCopies) {
-        this.book = book;
-        this.totalCopies = totalCopies;
-        this.availableCopies = totalCopies;
-    }
-
     public boolean isAvailable(){
         return  availableCopies > 0;
     }
 
-    public void borrow(BaseUser user){
-//        To be implemented
-//        Store the User Id
-        availableCopies--;
+    public void borrow(){
+        if(availableCopies > 0)
+            availableCopies--;
+    }
+
+    public void returnBook(){
+        availableCopies++;
     }
 
     public int getNoOfBorrowedCopies(){
         return totalCopies - availableCopies;
+    }
+
+    /**
+     * Formats a Library Book into a table row format in thw form
+     * Title | field | no of copies available
+     * @return A String Formatted
+     */
+    public String toTableRow(){
+        return String.format(
+                "%-25s | %-40s | %-15s | %16d |",book.getTitle(), book.getId(), book.getField(), availableCopies
+        );
     }
 }
