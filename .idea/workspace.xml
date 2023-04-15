@@ -4,8 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d002b26e-03a2-4080-a84f-9c155716c19e" name="Changes" comment="Testing MVP Functions For The Library">
+    <list default="true" id="d002b26e-03a2-4080-a84f-9c155716c19e" name="Changes" comment="Setting Up unit tests and">
+      <change afterPath="$PROJECT_DIR$/src/test/java/library/LibraryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/models/BaseUserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/models/BookTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/models/LibraryBookTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/models/StaffTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/models/StudentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/BookLibrary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BookLibrary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/Borrowings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/Borrowings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/library/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/library/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/BaseUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/BaseUser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,14 +32,24 @@
         <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
@@ -41,19 +62,124 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "rearrange.code.on.save": "true",
+    "settings.editor.selected.configurable": "actions.on.save"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\MAHADI\Documents\Java Projects\BookLibrary\src\main\resources" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="library" />
+      <recent name="models" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean install" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.LibraryTest.searchBooksByPublishingDate">
+    <configuration name="LibraryBookTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BookLibrary" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="models" />
+      <option name="MAIN_CLASS_NAME" value="models.LibraryBookTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LibraryBookTest.getNoOfBorrowedCopies" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BookLibrary" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="models" />
+      <option name="MAIN_CLASS_NAME" value="models.LibraryBookTest" />
+      <option name="METHOD_NAME" value="getNoOfBorrowedCopies" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LibraryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BookLibrary" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="library.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="library" />
+      <option name="MAIN_CLASS_NAME" value="library.LibraryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LibraryTest.searchBooksByPublishingDate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BookLibrary" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="library.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="library" />
+      <option name="MAIN_CLASS_NAME" value="library.LibraryTest" />
+      <option name="METHOD_NAME" value="searchBooksByPublishingDate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LibraryTest.searchBooksByTitle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BookLibrary" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="library.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="library" />
+      <option name="MAIN_CLASS_NAME" value="library.LibraryTest" />
+      <option name="METHOD_NAME" value="searchBooksByTitle" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.LibraryTest.searchBooksByPublishingDate" />
+        <item itemvalue="JUnit.LibraryTest.searchBooksByTitle" />
+        <item itemvalue="JUnit.LibraryTest" />
+        <item itemvalue="JUnit.LibraryBookTest.getNoOfBorrowedCopies" />
+        <item itemvalue="JUnit.LibraryBookTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -120,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681556791995</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Testing MVP Functions For The Library">
+      <created>1681570778611</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1681570778611</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -140,6 +273,7 @@
     <MESSAGE value="Implementing Waiting Concept" />
     <MESSAGE value="Testing Simple Priority Implementation" />
     <MESSAGE value="Testing MVP Functions For The Library" />
-    <option name="LAST_COMMIT_MESSAGE" value="Testing MVP Functions For The Library" />
+    <MESSAGE value="Setting Up unit tests and" />
+    <option name="LAST_COMMIT_MESSAGE" value="Setting Up unit tests and" />
   </component>
 </project>

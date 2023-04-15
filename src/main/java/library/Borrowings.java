@@ -6,59 +6,61 @@ import java.util.stream.Collectors;
 
 public class Borrowings {
 
-//    private final static String FILE_PATH = "path_to_file";
+    //    private final static String FILE_PATH = "path_to_file";
     private static Borrowings instance;
     private final ArrayList<BorrowingInstance> borrowings;
 
 
-    public static  Borrowings getInstance(){
-        if(instance == null) instance = new Borrowings();
-        return instance;
-    }
-    public Borrowings(){
+    public Borrowings() {
         borrowings = new ArrayList<>();
     }
 
-    public List<BorrowingInstance> getUserBorrowings(String userId){
+    public static Borrowings getInstance() {
+        if (instance == null) instance = new Borrowings();
+        return instance;
+    }
+
+    public List<BorrowingInstance> getUserBorrowings(String userId) {
         return borrowings.stream().filter(
-                b-> b.getUserId().equals(userId)
+                b -> b.getUserId().equals(userId)
         ).collect(Collectors.toList());
     }
 
-    public List<String> getBookBorrowers(String bookId){
+    public List<String> getBookBorrowers(String bookId) {
         return borrowings.stream().filter(
-                b->b.getBookId().equals(bookId)
+                b -> b.getBookId().equals(bookId)
         ).map(BorrowingInstance::getUserId).collect(Collectors.toList());
     }
 
-    public void recordBorrowing(BorrowingInstance borrowingInstance){
+    public void recordBorrowing(BorrowingInstance borrowingInstance) {
         borrowings.add(borrowingInstance);
     }
 
-    public void recordBorrowing(String userId, String bookId){
-        recordBorrowing(new BorrowingInstance(userId,bookId));
+    public void recordBorrowing(String userId, String bookId) {
+        recordBorrowing(new BorrowingInstance(userId, bookId));
     }
 
 
-    public boolean removeFromBorrowers(BorrowingInstance borrowingInstance){
+    public boolean removeFromBorrowers(BorrowingInstance borrowingInstance) {
         return borrowings.remove(borrowingInstance);
     }
-    public  boolean removeFromBorrowers(String userId, String bookId){
-        return removeFromBorrowers(new BorrowingInstance(userId, bookId));
+
+    public void removeFromBorrowers(String userId, String bookId) {
+        removeFromBorrowers(new BorrowingInstance(userId, bookId));
     }
 
-    public void saveRecords(){
+    public void saveRecords() {
 //        Not Yet implemented
 //        Serializes Borrrowings and Save In a File
 //
     }
 
-    public void loadRecords(){
+    public void loadRecords() {
 //        Not Yet Implemented
 //        De-Serializes Borrowings and Save in Run time
     }
 
-    public ArrayList<BorrowingInstance> getAllBorrowings(){
+    public ArrayList<BorrowingInstance> getAllBorrowings() {
         return borrowings;
     }
 
