@@ -18,6 +18,11 @@ public class Book {
         this.field = field;
     }
 
+
+    public Book(String id){
+        this.id = id;
+    }
+
     @Override
     public String toString() {
         return String.format(
@@ -64,5 +69,9 @@ public class Book {
 
     public void setField(Field field) {
         this.field = field;
+    }
+
+    public boolean equals(Book b){
+        return id.equals(b.getId());
     }
 }

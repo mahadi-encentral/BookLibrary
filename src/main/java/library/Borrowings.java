@@ -6,42 +6,59 @@ import java.util.stream.Collectors;
 
 public class Borrowings {
 
-    private final static String FILE_PATH = "path_to_file";
+//    private final static String FILE_PATH = "path_to_file";
+    private static Borrowings instance;
+    private final ArrayList<BorrowingInstance> borrowings;
 
-    private static ArrayList<BorrowingInstance> borrowings;
 
+    public static  Borrowings getInstance(){
+        if(instance == null) instance = new Borrowings();
+        return instance;
+    }
     public Borrowings(){
         borrowings = new ArrayList<>();
     }
 
-    static List<String> getUserBorrowings(String userId){
+    public List<BorrowingInstance> getUserBorrowings(String userId){
         return borrowings.stream().filter(
                 b-> b.getUserId().equals(userId)
-        ).map(BorrowingInstance::getBookId).collect(Collectors.toList());
+        ).collect(Collectors.toList());
     }
 
-    static List<String> getBookBorrowers(String bookId){
+    public List<String> getBookBorrowers(String bookId){
         return borrowings.stream().filter(
                 b->b.getBookId().equals(bookId)
         ).map(BorrowingInstance::getUserId).collect(Collectors.toList());
     }
 
-    static void recordBorrowing(BorrowingInstance borrowingInstance){
+    public void recordBorrowing(BorrowingInstance borrowingInstance){
         borrowings.add(borrowingInstance);
     }
 
-    static void saveRecords(){
+    public void recordBorrowing(String userId, String bookId){
+        recordBorrowing(new BorrowingInstance(userId,bookId));
+    }
+
+
+    public boolean removeFromBorrowers(BorrowingInstance borrowingInstance){
+        return borrowings.remove(borrowingInstance);
+    }
+    public  boolean removeFromBorrowers(String userId, String bookId){
+        return removeFromBorrowers(new BorrowingInstance(userId, bookId));
+    }
+
+    public void saveRecords(){
 //        Not Yet implemented
 //        Serializes Borrrowings and Save In a File
 //
     }
 
-    public static void loadRecords(){
+    public void loadRecords(){
 //        Not Yet Implemented
 //        De-Serializes Borrowings and Save in Run time
     }
 
-    public static ArrayList<BorrowingInstance> getAllBorrowings(){
+    public ArrayList<BorrowingInstance> getAllBorrowings(){
         return borrowings;
     }
 
