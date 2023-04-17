@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d002b26e-03a2-4080-a84f-9c155716c19e" name="Changes" comment="Adding Simple Crud Using H2 and JPA">
+    <list default="true" id="d002b26e-03a2-4080-a84f-9c155716c19e" name="Changes" comment="Adding Named Queries for all data">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crud/TestBookCrud.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crud/TestBookCrud.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/crud/TestStudentCrud.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/crud/TestStudentCrud.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jpaModels/JpaBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpaModels/JpaBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jpaModels/JpaStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpaModels/JpaStudent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repositories/BookRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repositories/StudentRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,22 +90,9 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestBookCrud">
+  <component name="RunManager" selected="Application.crud.TestStudentCrud">
     <configuration name="DeleteStudent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="student.cruds.DeleteStudent" />
-      <module name="BookLibrary" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="student.cruds.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FindStudent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="student.cruds.FindStudent" />
       <module name="BookLibrary" />
       <extension name="coverage">
         <pattern>
@@ -150,13 +143,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="crud.TestStudentCrud" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="crud.TestStudentCrud" />
+      <module name="BookLibrary" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="crud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.crud.TestStudentCrud" />
         <item itemvalue="Application.TestBookCrud" />
         <item itemvalue="Application.TestStudentCrud" />
         <item itemvalue="Application.DeleteStudent" />
         <item itemvalue="Application.UpdateStudent" />
-        <item itemvalue="Application.FindStudent" />
       </list>
     </recent_temporary>
   </component>
@@ -268,6 +274,7 @@
     <MESSAGE value="Testing MVP Functions For The Library" />
     <MESSAGE value="Setting Up unit tests and" />
     <MESSAGE value="Adding Simple Crud Using H2 and JPA" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding Simple Crud Using H2 and JPA" />
+    <MESSAGE value="Adding Named Queries for all data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding Named Queries for all data" />
   </component>
 </project>

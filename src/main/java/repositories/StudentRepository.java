@@ -5,6 +5,8 @@ import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
 import jpaModels.JpaStudent;
 
+import java.util.List;
+
 public class StudentRepository {
 
     private final EntityManager entityManager;
@@ -24,9 +26,9 @@ public class StudentRepository {
 
     }
 
-//    public List<JpaStudent> findAllStudents(){
-//        return entityManager.find();
-//    }
+    public List<JpaStudent> findAllStudents() {
+        return entityManager.createNamedQuery("JpaStudent.getAllStudents", JpaStudent.class).getResultList();
+    }
 
     public JpaStudent findStudent(long studentId) {
         return entityManager.find(JpaStudent.class, studentId);

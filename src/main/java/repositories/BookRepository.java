@@ -5,6 +5,8 @@ import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
 import jpaModels.JpaBook;
 
+import java.util.List;
+
 public class BookRepository {
 
     private final EntityManager entityManager;
@@ -23,9 +25,9 @@ public class BookRepository {
 
     }
 
-//    public List<JpaBook> findAllBooks(){
-//        return entityManager.find();
-//    }
+    public List<JpaBook> findAllBooks() {
+        return entityManager.createNamedQuery("JpaBook.getAllBooks", JpaBook.class).getResultList();
+    }
 
     public JpaBook findBook(long bookId) {
         return entityManager.find(JpaBook.class, bookId);

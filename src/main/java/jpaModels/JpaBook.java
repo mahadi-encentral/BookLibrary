@@ -4,6 +4,9 @@ import jakarta.persistence.*;
 import models.Field;
 
 @Entity
+@NamedQueries({
+        @NamedQuery(query = "SELECT b FROM JpaBook b", name = "JpaBook.getAllBooks")
+})
 @Table(name = "books")
 public class JpaBook {
     @Id
@@ -67,5 +70,13 @@ public class JpaBook {
 
     public void setField(Field field) {
         this.field = field;
+    }
+
+    @Override
+    public String toString() {
+        return String.format(
+                "{id: %d, title: %s, author: %s, field: %s, published_date: %s%n",
+                bookId, title, author, field, publishedDate
+        );
     }
 }

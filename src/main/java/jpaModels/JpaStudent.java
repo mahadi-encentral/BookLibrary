@@ -4,6 +4,9 @@ package jpaModels;
 import jakarta.persistence.*;
 
 @Entity
+@NamedQueries({
+        @NamedQuery(query = "SELECT s FROM JpaStudent s", name = "JpaStudent.getAllStudents")
+})
 @Table(name = "students")
 public class JpaStudent {
 
@@ -45,7 +48,7 @@ public class JpaStudent {
     public long getId() {
         return id;
     }
-    
+
 
     @Override
     public String toString() {

@@ -6,31 +6,35 @@ import repositories.StudentRepository;
 public class TestStudentCrud {
 
     public static void main(String[] args) {
-        JpaStudent student = new JpaStudent();
-        student.setFirstName("Mahadi");
-        student.setLastName("Abuhuraira");
-
-        JpaStudent student2 = new JpaStudent();
-        student2.setFirstName("Dalibi");
-        student2.setLastName("Na biyu");
 
         StudentRepository studentRepository = new StudentRepository();
 
+
+        JpaStudent student = new JpaStudent();
+        student.setFirstName("Mamman");
+        student.setLastName("Abuhuraira");
+
+        JpaStudent student2 = new JpaStudent();
+        student2.setFirstName("yakawada");
+        student2.setLastName("Na biyu");
+
+
 //        Create Student
-        long newId = studentRepository.createStudent(student);
+        studentRepository.createStudent(student);
         long newId2 = studentRepository.createStudent(student2);
 
-//        Find Student
-        System.out.println("After Creation");
-        System.out.println(studentRepository.findStudent(newId));
+//      Retrieve Students
+        System.out.println("After Creation:::: All Students");
+        System.out.println(studentRepository.findAllStudents());
+
+//      Find One
         System.out.println(studentRepository.findStudent(newId2));
 
 
 //        update student
         student.setFirstName("Iliyasu Lawal");
-        studentRepository.updateStudent(student);
         System.out.println("After Update");
-        System.out.println(student);
+        System.out.println(studentRepository.updateStudent(student));
 
 
 //        Delete Student
