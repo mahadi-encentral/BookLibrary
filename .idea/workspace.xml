@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d002b26e-03a2-4080-a84f-9c155716c19e" name="Changes" comment="Adding Simple Crud Using H2 and JPA">
-      <change afterPath="$PROJECT_DIR$/src/main/java/crud/TestBookCrud.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/crud/TestStudentCrud.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jpaModels/JpaBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jpaModels/JpaStudent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repositories/BookRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repositories/StudentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/library/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/library/LibraryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jpaModels/JpaBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpaModels/JpaBook.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -248,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681597869475</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Adding Simple Crud Using H2 and JPA">
+      <created>1681767073041</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1681767073041</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

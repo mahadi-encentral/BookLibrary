@@ -1,6 +1,5 @@
 package jpaModels;
 
-
 import jakarta.persistence.*;
 import models.Field;
 
